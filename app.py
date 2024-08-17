@@ -149,12 +149,12 @@ async def process_files(files: List[Element]):
 #             )
 #         ]
 
-# @cl.on_chat_start
-# async def start_chat():
-#     # Create a Thread
-#     thread = await async_openai_client.beta.threads.create()
-#     # Store thread ID in user session for later use
-#     cl.user_session.set("thread_id", thread.id)
+@cl.on_chat_start
+async def start_chat():
+    # Create a Thread
+    thread = await async_openai_client.beta.threads.create()
+    # Store thread ID in user session for later use
+    cl.user_session.set("thread_id", thread.id)
 #     # await cl.Avatar(name=assistant.name, path="./public/favicon.png").send()
 #     # await cl.Message(content="안녕하세요! 한양대학교 챗봇입니다. 무엇을 도와드릴까요?", disable_feedback=True).send()
 
