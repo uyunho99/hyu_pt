@@ -1,4 +1,4 @@
 .env
-translations
+# translations
 .files
 __pycache__
