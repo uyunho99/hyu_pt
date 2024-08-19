@@ -51,7 +51,7 @@ class EventHandler(AsyncAssistantEventHandler):
             self.current_step = cl.Step(name=delta.type, type="tool")
             self.current_step.language = "python"
             self.current_step.start = utc_now()
-            await self.current_step.send()
+            await self.current_step.send()  
                  
         if delta.type == "code_interpreter":
             if delta.code_interpreter.outputs:
