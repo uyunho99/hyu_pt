@@ -90,6 +90,7 @@ custom_css = "/public/test.css"
     default = "light"
     #layout = "wide"
     #font_family = "Inter, sans-serif"
+
 # Override default MUI light theme. (Check theme.ts)
 [UI.theme.light]
     background = "#FAFAFA"
