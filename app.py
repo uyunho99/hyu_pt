@@ -173,8 +173,8 @@ async def main(message: cl.Message):
         attachments=attachments,
     )
 
-    elements = [cl.Pdf(name="2024-1 서울캠퍼스 학사안내 및 수업시간표", display="inline", path="./public/pdf/2024-1_서울캠퍼스_학사안내_및_수업시간표.pdf"),
-                cl.Pdf(name="2024학년도 한양대학교 캠퍼스 가이드북", display="inline", path="./public/pdf/2024학년도_한양대학교_캠퍼스_가이드북.pdf")]
+    # elements = [cl.Pdf(name="2024-1 서울캠퍼스 학사안내 및 수업시간표", display="inline", path="./public/pdf/2024-1_서울캠퍼스_학사안내_및_수업시간표.pdf"),
+    #             cl.Pdf(name="2024학년도 한양대학교 캠퍼스 가이드북", display="inline", path="./public/pdf/2024학년도_한양대학교_캠퍼스_가이드북.pdf")]
 
     # Create and Stream a Run
     async with async_openai_client.beta.threads.runs.stream(
